@@ -1,10 +1,15 @@
+:root {
+  --lining-color: black;
+  --background-theme: white;
+}
+
 nav {
   background-color: green;
   padding: 10px;
 }
 
 nav a {
-  color: white;
+  color: var(--background-theme);
   display: block;
   padding: 20px;
 }
@@ -16,7 +21,7 @@ h1 {
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid var(--lining-color);
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
@@ -33,16 +38,16 @@ body {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
+  border: 1px solid var(--lining-color);
   padding: 1rem;
-  background-color: #eee;
+  background-color: var(--background-theme);
   color: #333;
   text-align: center;
 }
 
 footer {
   margin-top: 15px;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--lining-color);
   text-align: center;
 }
 
