@@ -19,6 +19,38 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+section {
+    position: relative;
+}
+
+section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.img-box {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: grid;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+footer p {
+    text-align: center;
+}
+
+figure img {
+    max-width: 90%;
+}
+
 header, main, footer {
     width: 840px;
     margin: 0 auto;
@@ -27,6 +59,12 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav, p, section, article {
