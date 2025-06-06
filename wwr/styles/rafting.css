@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #994D00;
-    --secondary-color: #325800;
-    --accent1-color: #0090C9;
+    --primary-color: #ffffff;
+    --secondary-color: #3c482d;
+    --accent1-color: #214443;
     --accent2-color: #003FAC;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Raleway", sans-serif;
@@ -40,11 +40,13 @@ section h2 {
 
 footer {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 30% 40% 30%;
 }
 
-footer p {
-    text-align: center;
+footer p, footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 figure img {
@@ -58,7 +60,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 nav {
@@ -86,7 +88,45 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.contact-section {
+    border: 2px solid var(--secondary-color);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+.contact-section h1 {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.contact-section iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 7px;
+    border: none;
+}
+
+.employee-box {
+    grid-template-columns: 33% 33% 34%;
+    display: grid;
+    text-align: center;
+}
+.employee-box img {
+    height: 85%;
+}
+
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -111,4 +151,57 @@ article {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column3 {
+    grid-template-columns: 0.2fr 2fr;
+}
+
+form fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 95%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
