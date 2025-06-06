@@ -54,20 +54,20 @@
             <section class="contact-section">
                 <form>
                     <fieldset>
-                        <label class="form-item column2">Name: <input type="text" name="name"></label>
-                        <label class="form-item column2">Email address: <input type="email" name="email"></label>
+                        <label class="form-item column2">Name: <input id="name" type="text" name="name"></label>
+                        <label class="form-item column2">Email address: <input id="email" type="email" name="email"></label>
                     </fieldset>
                     <fieldset>
                         <p class="no-padding">Purpose of inquiry:</p>
-                        <label class="form-item column3"><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                        <label class="form-item column3"><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label class="form-item column3"><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        <label class="form-item column3"><input id="general" type="radio" name="purpose" value="general"> General Inquiry</label>
+                        <label class="form-item column3"><input id="reservation" type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                        <label class="form-item column3"><input id="suggestion" type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
                     </fieldset>
                     <fieldset>
-                        <label class="form-item column2">Your Message: <textarea name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea></label>
-                        <label class="form-item column3"><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                        <label class="form-item column2">Your Message: <textarea id="message" name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea></label>
+                        <label class="form-item column3"><input id="subscribe" type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
                     </fieldset>
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </form>
             </section>
         </main>
