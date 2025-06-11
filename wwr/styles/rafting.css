@@ -1,8 +1,10 @@
 :root {
-    --primary-color: #ffffff;
+    --heading-color: #ffffff;
+    --primary-color: #ff3f3f;
     --secondary-color: #3c482d;
     --accent1-color: #214443;
     --accent2-color: #003FAC;
+    --link-color: blue;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Raleway", sans-serif;
 }
@@ -13,6 +15,9 @@
     box-sizing: border-box;
 }
 
+a {
+    color: var(--link-color);
+}
 
 body {
     font-family: var(--body-font);
@@ -58,9 +63,14 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color) !important;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-color) !important;
 }
 
 nav {
@@ -89,11 +99,33 @@ nav, p, section, article {
 }
 
 .contact-section {
-    border: 2px solid var(--secondary-color);
-    border-radius: 7px;
     padding: 10px;
     margin: 0;
     margin-top: 15px;
+}
+
+section {
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.no-border {
+    border: none;
+}
+
+.about-grid {
+    grid-template-columns: 30% 40% 30%;
+    display: grid;
+    text-align: center;
+}
+
+.about-grid img {
+    max-width: 100%;
+}
+
+section a {
+    text-align: center;
 }
 
 .no-padding {
@@ -204,4 +236,31 @@ button {
 
 button:hover {
     background-color: darkgreen;
+}
+
+.trips-list {
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50%;
+}
+
+.trips-types {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.trips-types img {
+    max-width: 100%;
+}
+
+.trips-types div {
+    margin: 10px;
+}
+
+.trips-types h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.center {
+    text-align: center;
 }
